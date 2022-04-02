@@ -1,0 +1,68 @@
+:root {
+  --font-stack: 'Red Hat Display', sans-serif;
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --xtra-pale-blue: hsl(225, 100%, 98%);
+  --desat-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  font: 100% var(--font-stack);
+  color: var(--dark-blue);
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: 
+    url(./images/pattern-background-desktop.svg), 
+    var(--xtra-pale-blue);
+  background-repeat: no-repeat;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-column-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.card {
+  width: 400px;
+}
+
+.card .header-img {
+  width: 100%;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+footer {
+  height: 20px;
+  width: 100%;
+  background: rgb(0, 0, 32);
+}
+
+footer li {
+  list-style: none;
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--pale-blue); }
+.attribution a { color: hsl(227, 18%, 54%); }
