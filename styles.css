@@ -22,10 +22,50 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: 
-    url(./images/pattern-background-desktop.svg), 
-    var(--xtra-pale-blue);
+  background-color: var(--pale-blue);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-size: 100% 50%;
   background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: .8rem;
+}
+
+p {
+  font-size: .75rem;
+  color: var(--desat-blue);
+}
+
+.primary {
+  background-color: var(--bright-blue);
+  color: white;
+  box-shadow: 0 9px 10px rgba(0, 0, 255, 0.295);
+}
+
+.primary:hover {
+  opacity: .8;
+}
+
+.cancel {
+  background-color: white;
+  color: gray;
+}
+
+.cancel:hover {
+  color: black;
+}
+
+.text {
+  margin-bottom: 15px;
 }
 
 .center-text {
@@ -41,17 +81,70 @@ body {
   flex-wrap: nowrap;
 }
 
+.flex-end {
+  justify-self: end;
+}
+
 .card {
-  width: 400px;
+  width: 300px;
+  border-radius: 20px;
+  background: white;
+  overflow: hidden;
 }
 
 .card .header-img {
   width: 100%;
 }
 
+.card .contents {
+  padding: 25px;
+}
+
 .bottom {
   position: absolute;
   bottom: 0;
+}
+
+.plan {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  background-color: var(--xtra-pale-blue);
+  padding: 15px;
+}
+
+.plan img {
+  width: 40px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.plan a {
+  margin-left: auto;
+  font-size: .7rem;
+  color: var(--bright-blue);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.plan a:hover {
+  color: var(--desat-blue);
+  text-decoration: none;
+}
+
+button {
+  border-radius: 10px;
+  width: 100%;
+  padding: 12px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
 }
 
 footer {
@@ -66,3 +159,9 @@ footer li {
 
 .attribution { font-size: 11px; text-align: center; color: var(--pale-blue); }
 .attribution a { color: hsl(227, 18%, 54%); }
+
+@media (max-width: 500px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+}
