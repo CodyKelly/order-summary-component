@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/order-summary-card-using-html-and-css-SJUcULwm9)
-- Live Site URL: [Add live site URL here](https://codykelly.github.io/order-summary-component/)
+- [My solution](https://www.frontendmentor.io/solutions/order-summary-card-using-html-and-css-SJUcULwm9)
+- [Live site](https://codykelly.github.io/order-summary-component/)
 
 ## My process
 
