@@ -30,9 +30,8 @@ body {
   min-height: 100vh;
   background-color: var(--pale-blue);
   background-image: url(./images/pattern-background-desktop.svg);
-  background-size: 100% 50%;
+  background-size: 100vw 50vh;
   background-repeat: no-repeat;
-  background-position: top center;
   
 }
 
